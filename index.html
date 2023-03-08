@@ -1,0 +1,40 @@
+<!doctype HTML>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <script src="./js/aframe/aframe.min.js"></script>
+    <script src="./js/arjs/aframe-ar.js"></script>
+    <title>Marker Camera</title>
+</head>
+
+<body>
+    
+    <a-scene embedded arjs>
+
+        <a-marker preset="hiro">
+
+           <a-sphere position="0 0 0" radius="1" src="img/matahari.jpg" animation="property: rotation; to: 360 360 360; loop: true; dur: 10000; easing: linear;" ></a-sphere>
+
+           <a-sphere position="0 2 0" radius="1" src="img/bulan.jpg" animation="property: rotation; to: 360 360 360; loop: true; dur: 10000; easing: linear;" ></a-sphere>
+    
+           <a-sphere position="0 -2 0" radius="1" src="img/bumi.jpg" animation="property: rotation; to: 360 360 360; loop: true; dur: 10000; easing: linear;" ></a-sphere>
+    
+           <a-sphere position="2 0 0" radius="1" src="img/jupiter.jpg" animation="property: rotation; to: 360 360 360; loop: true; dur: 10000; easing: linear;" ></a-sphere>
+
+           <a-sphere position="-2 0 0" radius="1" src="img/mars.jpg" animation="property: rotation; to: 360 360 360; loop: true; dur: 10000; easing: linear;" ></a-sphere>
+
+        </a-marker>
+    
+    </a-scene>
+    
+    <a-entity camera>
+
+    </a-entity>
+
+    
+</body>
+
+
+</html>
